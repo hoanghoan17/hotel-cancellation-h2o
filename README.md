@@ -3,15 +3,6 @@
 ## Đề tài: H2O – Nền tảng Machine Learning phân tán trên dữ liệu lớn
 ### Bài toán thực nghiệm: Phân tích và dự đoán khả năng khách hàng hủy đặt phòng khách sạn bằng H2O AutoML
 
-* **Đơn vị đào tạo:** Trường Đại học Công Thương TP. Hồ Chí Minh (HUIT)
-* **Khoa:** Công nghệ Thông tin
-* **Bộ môn:** Khoa học Dữ liệu & Trí tuệ Nhân tạo
-* **Giảng viên hướng dẫn:** ThS. Ngô Dương Hà
-* **Nhóm sinh viên thực hiện:**
-  * **Nguyễn Quốc Huy** - MSSV: `2001230301`
-  * **Hoàng Văn Hoan** - MSSV: `2001230258`
-* **Thời gian thực hiện:** Tháng 10 Năm 2026
-
 ---
 
 ## 1. Mục tiêu dự án
