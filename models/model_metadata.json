@@ -1,0 +1,278 @@
+{
+    "model_id": "StackedEnsemble_AllModels_3_AutoML_1_20261027_35724",
+    "algorithm": "stackedensemble",
+    "binary_model_path": "C:\\Users\\cokhu\\.gemini\\antigravity\\scratch\\hotel_cancellation_h2o\\models\\StackedEnsemble_AllModels_3_AutoML_1_20261027_35724",
+    "mojo_path": null,
+    "target": "is_canceled",
+    "features": [
+        "hotel",
+        "lead_time",
+        "arrival_date_year",
+        "arrival_date_month",
+        "arrival_date_week_number",
+        "arrival_date_day_of_month",
+        "stays_in_weekend_nights",
+        "stays_in_week_nights",
+        "adults",
+        "children",
+        "babies",
+        "meal",
+        "country",
+        "market_segment",
+        "distribution_channel",
+        "is_repeated_guest",
+        "previous_cancellations",
+        "previous_bookings_not_canceled",
+        "reserved_room_type",
+        "assigned_room_type",
+        "booking_changes",
+        "deposit_type",
+        "agent",
+        "days_in_waiting_list",
+        "customer_type",
+        "adr",
+        "required_car_parking_spaces",
+        "total_of_special_requests",
+        "has_company"
+    ],
+    "n_features": 29,
+    "categorical_features": [
+        "hotel",
+        "arrival_date_month",
+        "meal",
+        "country",
+        "market_segment",
+        "distribution_channel",
+        "is_repeated_guest",
+        "reserved_room_type",
+        "assigned_room_type",
+        "deposit_type",
+        "customer_type",
+        "has_company"
+    ],
+    "numerical_features": [
+        "lead_time",
+        "arrival_date_year",
+        "arrival_date_week_number",
+        "arrival_date_day_of_month",
+        "stays_in_weekend_nights",
+        "stays_in_week_nights",
+        "adults",
+        "children",
+        "babies",
+        "previous_cancellations",
+        "previous_bookings_not_canceled",
+        "booking_changes",
+        "agent",
+        "days_in_waiting_list",
+        "adr",
+        "required_car_parking_spaces",
+        "total_of_special_requests"
+    ],
+    "test_metrics": {
+        "auc": 0.9588675279985581,
+        "aucpr": 0.9412565938643931,
+        "logloss": 0.24564864736693293
+    },
+    "leaderboard": [
+        {
+            "model_id": "StackedEnsemble_AllModels_3_AutoML_1_20261027_35724",
+            "auc": 0.9572125297961136,
+            "logloss": 0.249753822118418,
+            "aucpr": 0.9380027778449872,
+            "mean_per_class_error": 0.1174870711217966,
+            "rmse": 0.281398640336726,
+            "mse": 0.079185194783358
+        },
+        {
+            "model_id": "StackedEnsemble_AllModels_2_AutoML_1_20261027_35724",
+            "auc": 0.9558629358454688,
+            "logloss": 0.253352675377249,
+            "aucpr": 0.9354941213327912,
+            "mean_per_class_error": 0.1194494019983025,
+            "rmse": 0.284259585145975,
+            "mse": 0.0808035117473618
+        },
+        {
+            "model_id": "StackedEnsemble_AllModels_1_AutoML_1_20261027_35724",
+            "auc": 0.9558629358454688,
+            "logloss": 0.253352675377249,
+            "aucpr": 0.9354941213327912,
+            "mean_per_class_error": 0.1194494019983025,
+            "rmse": 0.284259585145975,
+            "mse": 0.0808035117473618
+        },
+        {
+            "model_id": "StackedEnsemble_BestOfFamily_2_AutoML_1_20261027_35724",
+            "auc": 0.955679492410222,
+            "logloss": 0.2537677599027952,
+            "aucpr": 0.9353437700222936,
+            "mean_per_class_error": 0.1200174671612349,
+            "rmse": 0.2842084285446983,
+            "mse": 0.0807744308558469
+        },
+        {
+            "model_id": "StackedEnsemble_BestOfFamily_3_AutoML_1_20261027_35724",
+            "auc": 0.955660227861843,
+            "logloss": 0.2537630684048091,
+            "aucpr": 0.935298913371396,
+            "mean_per_class_error": 0.1221354202145344,
+            "rmse": 0.2842296205382439,
+            "mse": 0.0807864771913141
+        },
+        {
+            "model_id": "GBM_4_AutoML_1_20261027_35724",
+            "auc": 0.9543664915409272,
+            "logloss": 0.2588055953974586,
+            "aucpr": 0.9326769304058616,
+            "mean_per_class_error": 0.1215614274982546,
+            "rmse": 0.2868461969593161,
+            "mse": 0.0822807407100227
+        },
+        {
+            "model_id": "StackedEnsemble_BestOfFamily_1_AutoML_1_20261027_35724",
+            "auc": 0.9536406291715456,
+            "logloss": 0.2599787947966858,
+            "aucpr": 0.9322794718602576,
+            "mean_per_class_error": 0.1244199901000298,
+            "rmse": 0.288108037198886,
+            "mse": 0.0830062410985947
+        },
+        {
+            "model_id": "GBM_1_AutoML_1_20261027_35724",
+            "auc": 0.9536338889697554,
+            "logloss": 0.2604103325095421,
+            "aucpr": 0.932294248746546,
+            "mean_per_class_error": 0.1246463843956202,
+            "rmse": 0.2879593661958959,
+            "mse": 0.082920596579942
+        },
+        {
+            "model_id": "GBM_grid_1_AutoML_1_20261027_35724_model_3",
+            "auc": 0.9532175261499514,
+            "logloss": 0.2622913111349995,
+            "aucpr": 0.9344612645212228,
+            "mean_per_class_error": 0.1219232711681176,
+            "rmse": 0.2863883747060657,
+            "mse": 0.0820183011667819
+        },
+        {
+            "model_id": "GBM_grid_1_AutoML_1_20261027_35724_model_2",
+            "auc": 0.9515367779588708,
+            "logloss": 0.2669675320276717,
+            "aucpr": 0.9290990327704056,
+            "mean_per_class_error": 0.1269712998861575,
+            "rmse": 0.2911101924925688,
+            "mse": 0.0847451441730605
+        },
+        {
+            "model_id": "DRF_1_AutoML_1_20261027_35724",
+            "auc": 0.950479952560452,
+            "logloss": 0.2719531132184822,
+            "aucpr": 0.9312182303868808,
+            "mean_per_class_error": 0.1264855751316191,
+            "rmse": 0.2914966821310604,
+            "mse": 0.0849703156934164
+        },
+        {
+            "model_id": "GBM_3_AutoML_1_20261027_35724",
+            "auc": 0.9499901167608502,
+            "logloss": 0.2712847465229354,
+            "aucpr": 0.9265456631494386,
+            "mean_per_class_error": 0.1301408200244224,
+            "rmse": 0.294027969385521,
+            "mse": 0.0864524467809728
+        },
+        {
+            "model_id": "GBM_2_AutoML_1_20261027_35724",
+            "auc": 0.9480258737703614,
+            "logloss": 0.2768866183218962,
+            "aucpr": 0.9236874996338336,
+            "mean_per_class_error": 0.134829968849273,
+            "rmse": 0.2970264503061236,
+            "mse": 0.0882247121814561
+        },
+        {
+            "model_id": "GBM_5_AutoML_1_20261027_35724",
+            "auc": 0.9466773553838318,
+            "logloss": 0.2804059888666103,
+            "aucpr": 0.9213878456230338,
+            "mean_per_class_error": 0.1351158537911603,
+            "rmse": 0.2991386195937805,
+            "mse": 0.0894839137324725
+        },
+        {
+            "model_id": "GBM_grid_1_AutoML_1_20261027_35724_model_4",
+            "auc": 0.944599532822751,
+            "logloss": 0.3642523088185518,
+            "aucpr": 0.9232663278378196,
+            "mean_per_class_error": 0.1335962251045747,
+            "rmse": 0.3261583324400486,
+            "mse": 0.1063792578200732
+        },
+        {
+            "model_id": "GBM_grid_1_AutoML_1_20261027_35724_model_1",
+            "auc": 0.9439102635347196,
+            "logloss": 0.2874655134732638,
+            "aucpr": 0.9174710558423996,
+            "mean_per_class_error": 0.1370240479405217,
+            "rmse": 0.3031549129275547,
+            "mse": 0.0919029012321132
+        },
+        {
+            "model_id": "XRT_1_AutoML_1_20261027_35724",
+            "auc": 0.9286728901196528,
+            "logloss": 0.4276114029533644,
+            "aucpr": 0.9062129340081068,
+            "mean_per_class_error": 0.1507508513089973,
+            "rmse": 0.3736315979506441,
+            "mse": 0.1396005709871517
+        },
+        {
+            "model_id": "GLM_1_AutoML_1_20261027_35724",
+            "auc": 0.8987303802166952,
+            "logloss": 0.3766482727723773,
+            "aucpr": 0.8603230238284361,
+            "mean_per_class_error": 0.1929766619317944,
+            "rmse": 0.3476618188915459,
+            "mse": 0.120868740314978
+        },
+        {
+            "model_id": "DeepLearning_1_AutoML_1_20261027_35724",
+            "auc": 0.8663817855846204,
+            "logloss": 0.9590689595324324,
+            "aucpr": 0.8181333305799231,
+            "mean_per_class_error": 0.2403228030826145,
+            "rmse": 0.5564775816834813,
+            "mse": 0.3096672989162955
+        },
+        {
+            "model_id": "DeepLearning_grid_1_AutoML_1_20261027_35724_model_1",
+            "auc": 0.8537368563077413,
+            "logloss": 1.39469613699333,
+            "aucpr": 0.8124270146215372,
+            "mean_per_class_error": 0.2415539893748606,
+            "rmse": 0.4727191933862699,
+            "mse": 0.2234634357957657
+        },
+        {
+            "model_id": "DeepLearning_grid_3_AutoML_1_20261027_35724_model_1",
+            "auc": 0.8234881213504018,
+            "logloss": 0.6137640489122499,
+            "aucpr": 0.7916795116338905,
+            "mean_per_class_error": 0.2588222429527246,
+            "rmse": 0.4326834251308789,
+            "mse": 0.1872149463829888
+        },
+        {
+            "model_id": "DeepLearning_grid_2_AutoML_1_20261027_35724_model_1",
+            "auc": 0.8161161571002409,
+            "logloss": 0.6885807504533127,
+            "aucpr": 0.7850824513875745,
+            "mean_per_class_error": 0.263059344130563,
+            "rmse": 0.4191065871525369,
+            "mse": 0.1756503313946469
+        }
+    ],
+    "variable_importance_top10": []
+}
