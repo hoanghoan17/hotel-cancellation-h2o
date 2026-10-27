@@ -27,13 +27,13 @@ flowchart TD
 
     subgraph H2O_Cluster ["2. Hạ tầng H2O-3 Local Cluster (In-Memory JVM 17)"]
         DKV["Distributed K/V Store<br/>(Frame: hotel_raw)"]
-        PRE["Tiền xử lý & Lọc rò rỉ<br/>(Loại bỏ reservation_status, điền NA, ép enum)"]
-        SPLIT["split_frame (seed=42)<br/>Train: 95,442 (80%) | Test: 23,948 (20%)"]
+        PRE["Tiền xử lý và Lọc rò rỉ<br/>(Loại bỏ reservation_status, điền NA, ép enum)"]
+        SPLIT["split_frame (seed=42)<br/>Train: 95,442 (80%) - Test: 23,948 (20%)"]
         AML["H2O AutoML Engine (60s)<br/>(GBM, DRF, XRT, GLM, DeepLearning)"]
         LEADER["Leader Model<br/>StackedEnsemble_AllModels_3<br/>(AUC = 0.9589)"]
     end
 
-    subgraph Persistence ["3. Lưu trữ mô hình & Metadata"]
+    subgraph Persistence ["3. Lưu trữ mô hình và Metadata"]
         SAVED_MODEL["models/StackedEnsemble_AllModels_3..."]
         META["models/model_metadata.json<br/>models/evaluation_results.json"]
         PLOTS["figures/*.png (7 biểu đồ)"]
@@ -44,15 +44,15 @@ flowchart TD
         P1["Trang 1: Tổng quan dữ liệu"]
         P2["Trang 2: Phân tích khám phá (EDA)"]
         P3["Trang 3: Đánh giá mô hình"]
-        P4["Trang 4: Dự đoán đơn lẻ & Hàng loạt"]
+        P4["Trang 4: Dự đoán đơn lẻ và Hàng loạt"]
     end
 
-    CSV -->|h2o.upload_file| DKV
+    CSV -->|"h2o.upload_file"| DKV
     DKV --> PRE --> SPLIT --> AML --> LEADER
     LEADER --> SAVED_MODEL
     LEADER --> META
     LEADER --> PLOTS
-    SAVED_MODEL -->|@st.cache_resource| APP
+    SAVED_MODEL -->|"st.cache_resource"| APP
     META --> APP
     PLOTS --> APP
     APP --> P1
